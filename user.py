@@ -12,4 +12,20 @@ class User:
         self.username = username
         self.password = password
 
+          def save_user(self):
+
+        '''
+        test case to test if user objects is saved in UserList
+        '''
+
+        User.UserList.append(self)
+
+         def delete_user(self):
+
+        '''
+        delete_user method deletes a saved user from the userlist
+        '''
+
+        User.UserList.remove(self)
+
         
