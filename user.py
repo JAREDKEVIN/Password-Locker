@@ -12,7 +12,7 @@ class User:
         self.username = username
         self.password = password
 
-     def save_user(self):
+    def save_user(self):
 
         '''
         test case to test if user objects is saved in UserList
@@ -60,6 +60,15 @@ class User:
                     return True
 
         return False 
-               
+
+
+    @classmethod
+    def display_user(cls):
+        '''
+        method that returns the UserList
+        '''
+        return cls.UserList
+
+
 
         
