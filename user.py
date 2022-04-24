@@ -12,7 +12,7 @@ class User:
         self.username = username
         self.password = password
 
-          def save_user(self):
+     def save_user(self):
 
         '''
         test case to test if user objects is saved in UserList
@@ -20,7 +20,7 @@ class User:
 
         User.UserList.append(self)
 
-         def delete_user(self):
+    def delete_user(self):
 
         '''
         delete_user method deletes a saved user from the userlist
@@ -28,8 +28,9 @@ class User:
 
         User.UserList.remove(self)
 
-          @classmethod
+    @classmethod
     def find_by_password(cls,password):
+
         '''
         Method that takes in a password and returns a user that matches that password.
         Args:
@@ -44,5 +45,21 @@ class User:
             else:
                print("Wrong password")
                return False
+
+    @classmethod           
+    def user_exist(cls,username):
+        '''
+        Method that checks if a user exists from the user list.
+        Args:
+           username: Phoneusername to search if it exists
+        Returns :
+            Boolean: True or false depending if the user exists
+        '''
+        for user in cls.UserList:
+            if user.username == username:
+                    return True
+
+        return False 
+               
 
         
