@@ -113,3 +113,11 @@ def test_user_exists(self):
         user_exists = User.user_exist("Tate")
 
         self.assertTrue(user_exists) 
+
+def test_display_all_user(self):
+        '''
+        method that returns a list of all user saved
+        '''
+
+        self.assertEqual(User.display_user(),User.UserList)  
+
