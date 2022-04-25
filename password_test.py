@@ -66,3 +66,13 @@ def test_save_user(self): #second test
         ''' test case to test if user objects is saved in UserList'''  
         self.new_user.save_user() 
         self.assertEqual(len(User.UserList),1) 
+
+def test_save_multiple_user(self): #third test
+            '''
+            test_save_multiple_user to check if we can save multiple user
+            objects to our UserList
+            '''
+            self.new_user.save_user()
+            test_user = User("Test","user","Tate","Tracy@2022") # new user
+            test_user.save_user()
+            self.assertEqual(len(User.UserList),2)
