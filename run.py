@@ -49,12 +49,18 @@ def create_account(account_name,account_username,account_password):
     '''
     new_credentials = Credentials(account_name,account_username,account_password)
     return new_credentials
-    
+
 def save_credentials(Credentials):
     '''
     Function to save user
     '''
     Credentials.save_credentials()
+    
+def delete_credentials(Credentials):
+    '''
+    Function to delete a user
+    '''
+    Credentials.delete_credentials()
 
 
 
