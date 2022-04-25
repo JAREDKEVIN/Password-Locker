@@ -55,12 +55,19 @@ def save_credentials(Credentials):
     Function to save user
     '''
     Credentials.save_credentials()
-    
+
 def delete_credentials(Credentials):
     '''
     Function to delete a user
     '''
     Credentials.delete_credentials()
+
+def find_account(account_name):
+    '''
+    Function that finds a user by password and returns the user
+    '''
+    return Credentials.find_by_account_name (account_name)
+
 
 
 
