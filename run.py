@@ -42,7 +42,13 @@ def display_user():
     '''
     return User.display_user()
 
-
+# functions that implement the behaviours we have created in credentials
+def create_account(account_name,account_username,account_password):
+    '''
+    Function to create a new account
+    '''
+    new_credentials = Credentials(account_name,account_username,account_password)
+    return new_credentials
 
 
 
