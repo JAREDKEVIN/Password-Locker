@@ -35,3 +35,10 @@ def test_find_by_account_name(self):
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
+
+#user account
+def tearDown(self):
+            '''
+            tearDown method that does clean up after each test case has run.
+            '''
+            User.UserList = []
