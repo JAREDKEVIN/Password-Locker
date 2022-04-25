@@ -61,3 +61,8 @@ def test_init(self):
         self.assertEqual(self.new_user.username,"Tate")
         self.assertEqual(self.new_user.password,"Tracy@2022")
 
+
+def test_save_user(self): #second test
+        ''' test case to test if user objects is saved in UserList'''  
+        self.new_user.save_user() 
+        self.assertEqual(len(User.UserList),1) 
