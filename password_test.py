@@ -87,7 +87,7 @@ def test_delete_user(self): #fourth test
 
             self.new_user.delete_user()# Deleting a user object
             self.assertEqual(len(User.UserList),1)
-            
+
 
 def test_find_user_by_password(self): #fifth test
         '''
@@ -100,3 +100,16 @@ def test_find_user_by_password(self): #fifth test
 
         find_user = User.find_by_password("Tracy@2022")
         self.assertEqual(find_user.password,test_user.password)  
+
+def test_user_exists(self):
+        '''
+        test to check if we can return a Boolean  if we cannot find the user.
+        '''
+
+        self.new_user.save_user()
+        test_user = User("Tracy","Sareto","Tate","Tracy@2022") # new user
+        test_user.save_user()
+
+        user_exists = User.user_exist("Tate")
+
+        self.assertTrue(user_exists) 
