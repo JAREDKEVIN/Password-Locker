@@ -68,6 +68,12 @@ def find_account(account_name):
     '''
     return Credentials.find_by_account_name (account_name)
 
+def check_existing_account(account_username):
+    '''
+    Function that check if a user exists with that username and return a Boolean
+    '''
+    return Credentials.account_exist(account_username)
+
 
 
 
