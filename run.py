@@ -97,6 +97,27 @@ def generate_password():
         passwordgen = ''.join(password_list)
         return passwordgen
 
+        
+def main(): #main function that calls all the other function
+    while True:
+        print("Hello Welcome to your password-locker. Write signup or login to start")
+        print("signup -or- login")
+        option = input()
+        
+        if option == "signup":
+                print("Create an account")
+        
+                print("🔒" *20)
+                print("Enter your First name")
+                first_name=input()
+                print("Enter your Last name")
+                last_name=input()
+                print("Enter your Username")
+                username=input()
+                print("Set your password")
+                password=input()
+                print("\n")
+
 
 
 
