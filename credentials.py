@@ -41,3 +41,17 @@ def find_by_account_name(cls,account_name):
             for credential in cls.Accountlist:
                 if credential.account_name == account_name:
                     return credential
+@classmethod           
+def account_exist(cls,account_username):
+            '''
+            Method that checks if a account exists from the account list.
+            Args:
+            accountname: Phoneaccountname to search if it exists
+            Returns :
+                Boolean: True or false depending if the account exists
+            '''
+            for credentials in cls.Accountlist:
+                if credentials.account_username == account_username:
+                        return True
+
+            return False
