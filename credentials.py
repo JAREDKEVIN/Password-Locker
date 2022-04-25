@@ -55,3 +55,10 @@ def account_exist(cls,account_username):
                         return True
 
             return False
+
+@classmethod
+def display_credentials(cls):
+            '''
+            method that returns the accountList
+            '''
+            return cls.Accountlist
