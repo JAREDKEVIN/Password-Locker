@@ -26,3 +26,12 @@ def test_find_by_account_name(self):
 
         found_account = Credentials.find_by_account_name('pepe')
         self.assertEqual(found_account.account_name,test_account.account_name)
+
+        class TestUser(unittest.TestCase): #subclass class that inherits from unittest.TestCase
+
+
+'''
+    Test class that defines test cases for the user class behaviours.
+    Args:
+        unittest.TestCase: TestCase class that helps in creating test cases
+    '''
