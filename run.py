@@ -23,3 +23,9 @@ def delete_user(User):
     Function to delete a user
     '''
     User.delete_user()
+
+def find_user(password):
+    '''
+    Function that finds a user by password and returns the user
+    '''
+    return User.find_by_password(password)
