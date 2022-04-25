@@ -159,7 +159,17 @@ if action == "G":
                            print("Your password is: " + passwordgen)
                            print("🔒" *5)
                            save_credentials(create_account(account_name,account_username,passwordgen))
+          
+elif action=="C":
+                            print("Enter your password")
+                            account_password=input()
+                            print("\n")
+                            print("🔒" *20)
 
+                            save_credentials(create_account(account_name,account_username,account_password))
+                            print("\n")
+                            print("Your accout was succesfully created.These are you details")
+                        
 
 
 
