@@ -125,8 +125,8 @@ print("🔒" *20)
                 
 print(f"Name:{first_name} {last_name} \nUsername: {username} \nPassword: {password}")
 print("Login into your account with these details")
-print("🔒" *20)
 
+print("🔒" *20)
 elif 
 option == "login":
 print("Enter your Username")
@@ -136,6 +136,21 @@ password=input()
         
                 
 print("🔓" *20)
+
+while True:
+                    print(" You can create multiple credential account (CA) \n view your accounts(VA) \nfind account(FA) \n delete account(DA) \n exit account (EXT")
+                    choice= input()
+                    if choice == "CA":
+                        print("Create Credential account")
+                        print("🔒" *20)
+                        print("\n")
+                        print("Enter your account_name")
+                        account_name=input()
+                        print("Enter your  account_username")
+                        account_username=input()
+                        print("\n")
+                        print("Generate new password (G) Create new passord (C)")
+                        action =input()
 
 
 
