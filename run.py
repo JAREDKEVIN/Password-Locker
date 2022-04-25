@@ -118,7 +118,7 @@ def main(): #main function that calls all the other function
         password=input()
         print("\n")
 
-save_user(create_user(first_name, last_name, username, password))
+    save_user(create_user(first_name, last_name, username, password))
 
 print("Your accout was succesfully created.These are you details")
 print("🔒" *20)
@@ -127,6 +127,7 @@ print(f"Name:{first_name} {last_name} \nUsername: {username} \nPassword: {passwo
 print("Login into your account with these details")
 
 print("🔒" *20)
+
 elif 
 option == "login":
 print("Enter your Username")
@@ -151,6 +152,13 @@ while True:
                         print("\n")
                         print("Generate new password (G) Create new passord (C)")
                         action =input()
+
+if action == "G":
+                           passwordgen = generate_password()
+                           print("🔒" *5)
+                           print("Your password is: " + passwordgen)
+                           print("🔒" *5)
+                           save_credentials(create_account(account_name,account_username,passwordgen))
 
 
 
