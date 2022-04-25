@@ -121,3 +121,7 @@ def test_display_all_user(self):
 
         self.assertEqual(User.display_user(),User.UserList)  
 
+    
+if __name__ == '__main__':
+    unittest.main()
+
