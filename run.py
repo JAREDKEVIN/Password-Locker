@@ -169,7 +169,23 @@ elif action=="C":
                             save_credentials(create_account(account_name,account_username,account_password))
                             print("\n")
                             print("Your accout was succesfully created.These are you details")
-                        
+
+ # print(f"AccountName:{account_name} \nAccountUsername: {account_username} \nAccount_Password:{account_password}")  
+elif choice == "VA":
+                        print("Enter account you want to view")
+                        if display_credentials():
+                            print("\n")
+                            
+                            for Credential in display_credentials():
+                                print("Here is a list pf your Account")
+                                print("\n")
+                                print("🔐" *20)
+                                print("\n")
+                                print(f"{Credential.account_name} \n{Credential.account_username} \n{Credential.account_password}")
+                                print("\n")
+                                print("🔐" *20)
+                        else:
+                            print("That account does not exist")                     
 
 
 
