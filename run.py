@@ -73,12 +73,29 @@ def check_existing_account(account_username):
     Function that check if a user exists with that username and return a Boolean
     '''
     return Credentials.account_exist(account_username)
-    
+
 def display_credentials():
     '''
     Function that returns all the saved users
     '''
     return Credentials.display_credentials()
+
+def generate_password():
+        '''
+        Function to generate a random password
+        '''
+        password_list = []
+        characters_upper = 'abcdefghijklmnopqrstuvwxyz'.upper()
+        characters_lower = 'abcdefghijklmnopqrstuvwxyz'.lower()
+        numbers = '0123456789'
+        symbols = '!@#$%&*'
+        for i in range(3):
+            password_list.append(random.choice(characters_upper))
+            password_list.append(random.choice(characters_lower))
+            password_list.append(random.choice(numbers))
+            password_list.append(random.choice(symbols))
+        passwordgen = ''.join(password_list)
+        return passwordgen
 
 
 
