@@ -185,7 +185,20 @@ elif choice == "VA":
                                 print("\n")
                                 print("🔐" *20)
                         else:
-                            print("That account does not exist")                     
+                            print("That account does not exist") 
+
+elif choice == 'FA':
+                        print('Enter the ACCOUNT name you want to search for')
+                        account_name = input()
+                        if check_existing_account(account_name):
+                            search_account = find_account(account_name)
+                            print(f"{account_name} {account_username} {account_password}")
+                            print('-'*20)
+                            print(f"Account name: {search_account.account_name}")
+                            print(f"Account username: {search_account.account_username}")
+                        else:
+                                print("That account does not exist")
+
 
 
 
