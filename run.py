@@ -120,11 +120,22 @@ def main(): #main function that calls all the other function
 
 save_user(create_user(first_name, last_name, username, password))
 
-        print("Your accout was succesfully created.These are you details")
-        print("🔒" *20)
+print("Your accout was succesfully created.These are you details")
+print("🔒" *20)
                 
-        print(f"Name:{first_name} {last_name} \nUsername: {username} \nPassword: {password}")
-        print("Login into your account with these details")
+print(f"Name:{first_name} {last_name} \nUsername: {username} \nPassword: {password}")
+print("Login into your account with these details")
+print("🔒" *20)
+
+elif 
+option == "login":
+print("Enter your Username")
+username=input()
+print("Enter you user password")
+password=input()
+        
+                
+print("🔓" *20)
 
 
 
