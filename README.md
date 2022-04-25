@@ -38,12 +38,12 @@ An application that will help users manage  passwords and even generate new pass
 ## BDD
 | Behaviour                          | Input                                | Output  |
 | ---:                               | ---:                                 | ---:    |
-| Run the Atarah Passaver App in terminal | chmod +x run.py followed by ./run.py | Runs|
+| Run the App in terminal | chmod +x run.py followed by ./run.py | Runs|
 | Asks to either create a account or login | Enter user name | Asks for password |
 | Prompts password   | Enter password | Displays a welcome message |
 | Lists an option for user interactions| select short code | prompts generated |
-| Short code cc - create new credentials | Enter account name and password | user account and password displayed |
-| Short code dc- displays accounts | - | Displays a list of accounts created and their passwords|| Short code dd - delete accounts | account and password of app to be deleted| deletes app | 
+| Short code CA - create new credentials | Enter account name and password | user account and password displayed |
+| Short code VA- displays accounts | - | Displays a list of accounts created and their passwords|| Short code DA - delete accounts | account and password of app to be deleted| deletes app | 
 
 
 ## TDD
