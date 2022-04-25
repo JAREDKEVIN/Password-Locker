@@ -211,6 +211,15 @@ elif choice == 'DA':
                         else:
                             print("That credential does not exist")
                             print('\n')
+#exit app
+elif choice == 'EXT':
+                        print('Thank you for considering our service. Goodbye for now see you later!')
+                        break
+else:
+                        print('I really didnt get that. Please use the short codes')
+   
+if __name__== "__main__":
+    main()  
 
 
 
