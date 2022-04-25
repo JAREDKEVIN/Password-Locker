@@ -73,6 +73,12 @@ def check_existing_account(account_username):
     Function that check if a user exists with that username and return a Boolean
     '''
     return Credentials.account_exist(account_username)
+    
+def display_credentials():
+    '''
+    Function that returns all the saved users
+    '''
+    return Credentials.display_credentials()
 
 
 
