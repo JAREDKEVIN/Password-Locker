@@ -42,3 +42,11 @@ def tearDown(self):
             tearDown method that does clean up after each test case has run.
             '''
             User.UserList = []
+
+
+
+    def setUp(self): #first test, test to see if our objects are being instantiated correctly.
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_user = User("Tracy","Sareto","Tate","Tracy@2022") # create user object
