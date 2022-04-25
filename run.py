@@ -200,6 +200,19 @@ elif choice == 'FA':
                                 print("That account does not exist")
 
 
+elif choice == 'DA':
+                        
+                        print("Enter the account name you want to delete:")
+                        account_name = input()
+                        if find_account(account_name):
+                            delete_credentials(find_account(account_name))
+                            print(f"{account_name} account has been deleted")
+                            print('\n')
+                        else:
+                            print("That credential does not exist")
+                            print('\n')
+
+
 
 
 
